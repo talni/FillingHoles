@@ -2,7 +2,7 @@
 how to run the project:
 run src/test/main, afterwards follow the system instructions and enter your input.
 *The system supports image converting to png
-*notice that the image file and mask file should be in the same size N*N.
+*notice that the image file and mask file should be in the same size N*M.
 
 ************************************************************************
 The project contains:
