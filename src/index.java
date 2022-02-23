@@ -1,4 +1,7 @@
 public class index {
+
+    // index represents pixel thus it holds pixel's position and value (color)
+
        private int row;
        private int col;
        private float value;
