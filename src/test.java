@@ -30,18 +30,8 @@ public class test {
 
      index[][] img= fillingHole.GeneratingMatrix(img_path,mask_path);
      fillingHole toDo = new fillingHole(connectivity,z,epsilon,img);
-     try {
-      toDo.fillTheHole(img_path);
-     }
-     catch (IOException e){
-      e.printStackTrace();;
-     }
-
-
-
-
-
-
+     toDo.fillTheHole(img_path);
+     System.out.println(("Done"));
     }
 }
 

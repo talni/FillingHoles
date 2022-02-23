@@ -45,7 +45,7 @@ public class fillingHole {
                 }
         }
     }
-    public void fillTheHole(String img_path) throws IOException {
+    public void fillTheHole(String img_path)  {
         for(index idx: holeIndexes){
             img[idx.getRow()][idx.getCol()].setValue(fillHole(idx));
         }
@@ -63,7 +63,11 @@ public class fillingHole {
         }
 
         File toReturn = new File( imgPath + "filled." + imgType);
-        ImageIO.write(output, imgType, toReturn);
+        try {
+            ImageIO.write(output, imgType, toReturn);
+        } catch (IOException e){
+            e.printStackTrace();
+        }
 
     }
 
