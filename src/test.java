@@ -21,17 +21,10 @@ public class test {
 
      if(!img_path.substring(img_path.lastIndexOf('.')+1).equals("png")){
       String newImagePath=img_path.substring(img_path.lastIndexOf('.'))+".png";
-      try {
        boolean succ = convertImage.imageConverter(img_path, newImagePath, "png");
        if(succ==false){
         System.out.println("Can not convert image");
         System.exit(1);
-       }
-      }
-       catch (IOException e){
-        System.out.println("Error during converting");
-        e.printStackTrace();
-
        }
       }
 
